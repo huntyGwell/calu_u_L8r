@@ -1,0 +1,6 @@
+name: Docker Workflow
+on:
+  push:
+    paths:
+      - '**.java'
+  workflow_dispatch:
