@@ -4,3 +4,8 @@ on:
     paths:
       - '**.java'
   workflow_dispatch:
+
+jobs:
+  build_Docker_Image:
+    name: Push Docker image to Docker hub
+    runs-on: ubuntu-latest
