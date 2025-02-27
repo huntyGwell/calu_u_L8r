@@ -9,3 +9,6 @@ jobs:
   build_Docker_Image:
     name: Push Docker image to Docker hub
     runs-on: ubuntu-latest
+    steps:
+      - name: Echo Test
+        run: echo This is a test
