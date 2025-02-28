@@ -37,20 +37,24 @@ class Calculator {
     .
     etc
      */
-    int fibonacciNumberFinder(int n){
+    public static int fibonacciNumberFinder(int n) {
         if (n <= 0) {
             throw new IllegalArgumentException("n must be greater than 0");
-        } else if (n == 1 || n == 2) {
+        }
+        if (n == 1 || n == 2) {
             return 1;
         }
 
-        int prev = 1, curr = 1;
+        int previous = 1;
+        int current = 1;
+
         for (int i = 3; i <= n; i++) {
-            int next = prev + curr;
-            prev = curr;
-            curr = next;
+            int next = previous + current;
+            previous = current;
+            current = next;
         }
-        return curr;
+
+        return current;
     }
 
 
