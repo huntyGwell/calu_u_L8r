@@ -1,6 +1,6 @@
 
 class Calculator {
-//comment this you punk ass bitch
+//comment
     Calculator(){
 
     }
