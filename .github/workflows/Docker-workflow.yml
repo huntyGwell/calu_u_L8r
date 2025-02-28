@@ -19,9 +19,7 @@ jobs:
           distribution: 'adopt'
           architecture: 'x64'
       - name: Clean
-        run: |
-          cd ../../
-          mvn -ntp clean
+        run: mvn -ntp clean
       - name: Build
         run: mvn -ntp compile
       - name: Short tests
